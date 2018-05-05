@@ -1,0 +1,55 @@
+<a class="btn btn-danger" href="#/contacts">Go Back</a>
+<div class="panel panel-success">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-12">
+                <form class="form-horizontal" ng-submit="updateContact()" ng-init="getContact()">
+                    <legend>Edit Contact</legend>
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="input1"  class="col-md-2 control-label">Title</label>
+
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="input1"  ng-model="contact.name" placeholder="Title">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input3" class="col-md-2 control-label">Location</label>
+
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="input3" ng-model="contact.location" placeholder="Location">
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input4" class="col-md-2 control-label">Job</label>
+
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="input4" ng-model="contact.job" placeholder="Job">
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input5" class="col-md-2 control-label">Phone</label>
+
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="input5" ng-model="contact.phone" placeholder="Phone">
+
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="form-group">
+                            <div class="col-md-10 col-md-offset-2">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="reset" class="btn btn-default">Reset</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

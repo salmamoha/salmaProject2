@@ -1,0 +1,60 @@
+<a class="btn btn-danger" href="#/contacts">Go Back</a>
+<div class="panel panel-success">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-12">
+            <form class="form-horizontal" id="form" ng-submit="addContact()" novalidate>
+                <center><legend><b>Add Contact</b></legend></center>
+                <fieldset>
+                    <div class="form-group">
+                        <label for="input1"  class="col-md-2 control-label">Name</label>
+
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="input1"  ng-model="contact.name" placeholder="name" data-smk-msg="Please fill out this field" required>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="input1"  class="col-md-2 control-label">Phone</label>
+
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="input1"  ng-model="contact.phone" placeholder="phone" data-smk-msg="Please fill out this field" required>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input5" class="col-md-2 control-label">Location</label>
+
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="input5" ng-model="contact.location" placeholder="Location" data-smk-msg="Please fill out this field" required>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input5" class="col-md-2 control-label">Job</label>
+
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="input5" ng-model="contact.job" placeholder="Job" data-smk-msg="Please fill out this field" required>
+
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="form-group">
+                        <div class="col-md-10 col-md-offset-2">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="reset" class="btn btn-default">Reset</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#form').smkValidate();
+</script>
